@@ -6,10 +6,27 @@
  */
 package nueralnet;
 
+import nueralnet.math.IActivationFunction;
+
 /**
  *
  * @author Michael Anderson
  */
-public class HiddenLayer {
+public class HiddenLayer extends NeuralLayer{
+    private int numberOfHiddenNeurons;
     
+    public HiddenLayer(int numberofhiddenneurons, IActivationFunction activationFunction, int neuronsInLayer) {
+        super(neuronsInLayer);
+        this.activationFnc = activationFunction;
+        numberOfHiddenNeurons = numberofhiddenneurons;
+    }
+
+    public HiddenLayer(int numberofneurons) {
+        super(numberofneurons);
+    }
+    
+    /*
+    public HiddenLayer(int a, IActivationFunction activationFnc, int neuronsInLayer) {
+        
+    }*/
 }
