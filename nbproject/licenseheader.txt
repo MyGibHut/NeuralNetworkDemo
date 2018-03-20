@@ -1,0 +1,10 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}This code is based off the Packt book Neural Network Programming in Java
+${licensePrefix}by Fabio Soares and Alan Souza
+${licensePrefix}Code may be similar to that found in the book.
+${licensePrefix}No copyright infringement intended
+<#if licenseLast??>
+${licenseLast}
+</#if>
